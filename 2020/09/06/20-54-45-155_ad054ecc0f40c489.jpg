@@ -1,0 +1,1745 @@
+<!DOCTYPE html>
+<!--[if !IE]>
+<html class="no-js non-ie" lang="en-US"> <![endif]-->
+<!--[if IE 7 ]>
+<html class="no-js ie7" lang="en-US"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="no-js ie8" lang="en-US"> <![endif]-->
+<!--[if IE 9 ]>
+<html class="no-js ie9" lang="en-US"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="ahrefs-site-verification" content="444ed4eb253b2e175037a391096cdabd0d7988515bc3666dafd8b616dd27dfb5">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://sematext.com/xmlrpc.php">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://sematext.com/wp-content/themes/sematext-next/inc/images/apple-touch-icon-precomposed.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://sematext.com/wp-content/themes/sematext-next/inc/images/apple-touch-icon.png">
+
+    <script type="text/javascript">
+        (function(e,r,n,t,s){var a=[];e[s]=function(){a.push(arguments)};e[s].queue=a;var o=[];var i=[];var c=true;var p=void 0;if(window.PerformanceObserver&&window.PerformanceObserver.supportedEntryTypes&&(  PerformanceObserver.supportedEntryTypes.indexOf("longtask")>=0||PerformanceObserver.supportedEntryTypes.indexOf("element")>=0)){p=new PerformanceObserver(function(e){e.getEntries().forEach(function(e){  switch(e.entryType){case"element":i.push(e);break;case"longtask":o.push(e);break;default:break}})});p.observe({entryTypes:["longtask","element"]})}e[s+"lt"]={longTasks:o,timingElements:i,inPageLoad:c,observer:p};if(t){var u=r.createElement(n);u.async=1;u.src=t;var f=r.getElementsByTagName(n)[0];f.parentNode.insertBefore(u,f)}})
+        (window,document,"script","//cdn.sematext.com/rum.js","strumTest");
+
+        (function(e,r,n,t,s){var a=[];e[s]=function(){a.push(arguments)};e[s].queue=a;var o=[];var i=[];var c=true;var p=void 0;if(window.PerformanceObserver&&window.PerformanceObserver.supportedEntryTypes&&(  PerformanceObserver.supportedEntryTypes.indexOf("longtask")>=0||PerformanceObserver.supportedEntryTypes.indexOf("element")>=0)){p=new PerformanceObserver(function(e){e.getEntries().forEach(function(e){  switch(e.entryType){case"element":i.push(e);break;case"longtask":o.push(e);break;default:break}})});p.observe({entryTypes:["longtask","element"]})}e[s+"lt"]={longTasks:o,timingElements:i,inPageLoad:c,observer:p};if(t){var u=r.createElement(n);u.async=1;u.src=t;var f=r.getElementsByTagName(n)[0];f.parentNode.insertBefore(u,f)}})
+        (window,document,"script",null,"strumUS");
+
+        window.STRUM_CONTEXTS = ['strumTest', 'strumUS'];
+        var receivers = [
+            'https://rum-receiver.apps.test.sematext.com',
+            'https://rum-receiver.sematext.com'
+        ];
+        strumTest('config', {
+            token: 'a49c4cca-a44d-4c11-9401-d5c32cfd556a',
+            receiverUrl: receivers[0],
+            ignoreOrigins: receivers,
+        });
+        strumUS('config', {
+            token: '3585e63f-9c1c-459c-a207-709923d61f53',
+            receiverUrl: receivers[1],
+            ignoreOrigins: receivers,
+        });
+    </script>
+
+
+	<!-- This site is optimized with the Yoast SEO plugin v14.0.4 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Java Exception Handling: Examples, Tutorials &amp; More - Sematext</title>
+	<meta name="description" content="Learn about class hierarchy, methods, what are exceptions, and all the ways you can handle them, from try to catch, throw, throws, finally, and more!" />
+	<meta name="robots" content="index, follow" />
+	<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<link rel="canonical" href="https://sematext.com/blog/java-exceptions/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Java Exception Handling: Examples, Tutorials &amp; More - Sematext" />
+	<meta property="og:description" content="Learn about class hierarchy, methods, what are exceptions, and all the ways you can handle them, from try to catch, throw, throws, finally, and more!" />
+	<meta property="og:url" content="https://sematext.com/blog/java-exceptions/" />
+	<meta property="og:site_name" content="Sematext" />
+	<meta property="article:publisher" content="https://www.facebook.com/Sematext/" />
+	<meta property="article:published_time" content="2020-08-19T10:43:33+00:00" />
+	<meta property="article:modified_time" content="2020-08-20T15:09:47+00:00" />
+	<meta property="og:image" content="https://sematext.com/wp-content/uploads/2020/08/java-Eceptions-handling-2.jpg" />
+	<meta property="og:image:width" content="1500" />
+	<meta property="og:image:height" content="820" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:creator" content="@sematext" />
+	<meta name="twitter:site" content="@sematext" />
+	<!-- / Yoast SEO plugin. -->
+
+
+<!-- Jetpack Site Verification Tags -->
+<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+<link rel='dns-prefetch' href='//rsms.me' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Sematext &raquo; Feed" href="https://sematext.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Sematext &raquo; Comments Feed" href="https://sematext.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Sematext &raquo; Java Exception Handling: A Tutorial on How to Catch Errors and Improve Performance Comments Feed" href="https://sematext.com/blog/java-exceptions/feed/" />
+<link rel='stylesheet' id='selection-sharer-css'  href='https://sematext.com/wp-content/plugins/selection-sharer/css/selection-sharer.css?ver=0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://sematext.com/wp-includes/css/dist/block-library/style.min.css?ver=5.4.2' type='text/css' media='all' />
+<style id='wp-block-library-inline-css' type='text/css'>
+.has-text-align-justify{text-align:justify;}
+</style>
+<link rel='stylesheet' id='responsive-lightbox-swipebox-css'  href='https://sematext.com/wp-content/plugins/responsive-lightbox/assets/swipebox/swipebox.min.css?ver=2.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wpfront-notification-bar-css'  href='https://sematext.com/wp-content/plugins/wpfront-notification-bar/css/wpfront-notification-bar.css?ver=1.7.1' type='text/css' media='all' />
+<link rel='stylesheet' id='inter-ui-font-css'  href='https://rsms.me/inter/inter-ui.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='sparkling-bootstrap-css'  href='https://sematext.com/wp-content/themes/sparkling/inc/css/bootstrap.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='sparkling-icons-css'  href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css'  href='https://sematext.com/wp-content/plugins/tablepress/css/default.min.css?ver=1.11' type='text/css' media='all' />
+<link rel='stylesheet' id='parent-style-css'  href='https://sematext.com/wp-content/themes/sparkling/style.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='child-style-css'  href='https://sematext.com/wp-content/themes/sematext-next/style.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='gamma-common-style-css'  href='https://sematext.com/wp-content/themes/sematext-next/inc/css/gamma-common.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='social-logos-css'  href='https://sematext.com/wp-content/plugins/jetpack/_inc/social-logos/social-logos.min.css?ver=1' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css'  href='https://sematext.com/wp-content/plugins/jetpack/css/jetpack.css?ver=8.5' type='text/css' media='all' />
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var related_posts_js_options = {"post_heading":"h4"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://sematext.com/wp-content/plugins/jetpack/_inc/build/related-posts/related-posts.min.js?ver=20191011'></script>
+<script type='text/javascript' src='https://sematext.com/wp-content/plugins/responsive-lightbox/assets/swipebox/jquery.swipebox.min.js?ver=2.2.2'></script>
+<script type='text/javascript' src='https://sematext.com/wp-content/plugins/responsive-lightbox/assets/infinitescroll/infinite-scroll.pkgd.min.js?ver=5.4.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var rlArgs = {"script":"swipebox","selector":"lightbox","customEvents":"","activeGalleries":"1","animation":"1","hideCloseButtonOnMobile":"0","removeBarsOnMobile":"0","hideBars":"1","hideBarsDelay":"5000","videoMaxWidth":"1080","useSVG":"1","loopAtEnd":"0","woocommerce_gallery":"0","ajaxurl":"https:\/\/sematext.com\/wp-admin\/admin-ajax.php","nonce":"c1f0c18827"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://sematext.com/wp-content/plugins/responsive-lightbox/js/front.js?ver=2.2.2'></script>
+<script type='text/javascript' src='https://sematext.com/wp-content/plugins/wpfront-notification-bar/jquery-plugins/jquery.c.js?ver=1.4.0'></script>
+<script type='text/javascript' src='https://sematext.com/wp-content/plugins/wpfront-notification-bar/js/wpfront-notification-bar.js?ver=1.7.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpp_params = {"sampling_active":"0","sampling_rate":"100","ajax_url":"https:\/\/sematext.com\/wp-json\/wordpress-popular-posts\/v1\/popular-posts","ID":"50644","token":"358ffd21f2","debug":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://sematext.com/wp-content/plugins/wordpress-popular-posts/assets/js/wpp-5.0.0.min.js?ver=5.1.0'></script>
+<script type='text/javascript' src='https://sematext.com/wp-content/themes/sematext-next/inc/js/intersection-observer.min.js?ver=5.4.2'></script>
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js?ver=5.4.2'></script>
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js?ver=5.4.2'></script>
+<script type='text/javascript' src='https://sematext.com/wp-content/themes/sparkling/inc/js/functions.min.js?ver=5.4.2'></script>
+<link rel='https://api.w.org/' href='https://sematext.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://sematext.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://sematext.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.4.2" />
+<link rel='shortlink' href='https://wp.me/p7iMwk-daQ' />
+<link rel="alternate" type="application/json+oembed" href="https://sematext.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsematext.com%2Fblog%2Fjava-exceptions%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://sematext.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsematext.com%2Fblog%2Fjava-exceptions%2F&#038;format=xml" />
+      
+
+<!-- This site is optimized with the Schema plugin v1.7.8.1 - https://schema.press -->
+<script type="application/ld+json">{"@context":"http:\/\/schema.org\/","@type":"TechArticle","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/sematext.com\/blog\/java-exceptions\/"},"url":"https:\/\/sematext.com\/blog\/java-exceptions\/","headline":"Java Exception Handling: A Tutorial on How to Catch Errors and Improve...","datePublished":"2020-08-19T06:43:33-04:00","dateModified":"2020-08-20T11:09:47-04:00","publisher":{"@type":"Organization","@id":"https:\/\/sematext.com\/#organization","name":"Sematext","logo":{"@type":"ImageObject","url":"https:\/\/sematext.com\/wp-content\/uploads\/2018\/07\/sematext-logo.jpg","width":600,"height":60}},"image":{"@type":"ImageObject","url":"https:\/\/sematext.com\/wp-content\/uploads\/2020\/08\/java-Eceptions-handling-2.jpg","width":1500,"height":820},"articleSection":"Logging","description":"Error handling is often a significant part of the application code. You might use conditionals to handle cases where you expect a certain state and want to avoid erroneous execution - for example, division by zero. However, there are cases where conditions are not known or are well hidden","author":{"@type":"Person","name":"Rafal Kuć","url":"https:\/\/sematext.com\/blog\/author\/kucrafal\/","image":{"@type":"ImageObject","url":"https:\/\/secure.gravatar.com\/avatar\/d05d7fbddd69c91eefaad0b9ec624111?s=96&d=mm&r=g","height":96,"width":96}}}</script>
+
+
+<link rel='dns-prefetch' href='//v0.wordpress.com'/>
+<link rel='dns-prefetch' href='//jetpack.wordpress.com'/>
+<link rel='dns-prefetch' href='//s0.wp.com'/>
+<link rel='dns-prefetch' href='//s1.wp.com'/>
+<link rel='dns-prefetch' href='//s2.wp.com'/>
+<link rel='dns-prefetch' href='//public-api.wordpress.com'/>
+<link rel='dns-prefetch' href='//0.gravatar.com'/>
+<link rel='dns-prefetch' href='//1.gravatar.com'/>
+<link rel='dns-prefetch' href='//2.gravatar.com'/>
+<style type='text/css'>img#wpstats{display:none}</style><link rel="shortcut icon" type="image/png" href="https://sematext.com/wp-content/themes/sematext-next/inc/images/favicon.png" />
+
+<!-- This site is optimized with the Schema plugin v1.7.8.1 - https://schema.press -->
+<script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+                "@id": "https://sematext.com",
+                "name": "Home"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+                "@id": "https://sematext.com/blog/",
+                "name": "Sematext Blog"
+            }
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+                "@id": "https://sematext.com/blog/java-exceptions/",
+                "name": "Java Exception Handling: A Tutorial on How to Catch Errors and Improve Performance",
+                "image": "https://sematext.com/wp-content/uploads/2020/08/java-Eceptions-handling-2.jpg"
+            }
+        }
+    ]
+}</script>
+
+			<style type="text/css" id="wp-custom-css">
+				.gdpr.gdpr-privacy-bar .gdpr-wrapper, .gdpr.gdpr-reconsent-bar .gdpr-wrapper {
+    max-width: 70%;
+    margin: 0 15%;
+}
+.gdpr.gdpr-privacy-bar .gdpr-wrapper .gdpr-content p, .gdpr.gdpr-reconsent-bar .gdpr-wrapper .gdpr-content p {
+    font-size: 12px;
+}
+.gdpr.gdpr-privacy-bar .gdpr-agreement, .gdpr.gdpr-reconsent-bar .gdpr-agreement {
+    background: #022638;
+}
+.gdpr.gdpr-privacy-bar .gdpr-preferences, .gdpr.gdpr-reconsent-bar .gdpr-preferences {
+    font-size: 12px;
+}
+.gdpr.gdpr-privacy-bar, .gdpr.gdpr-reconsent-bar {
+    background: rgb(20, 54, 71);
+}
+.gdpr.gdpr-privacy-bar .gdpr-wrapper, .gdpr.gdpr-reconsent-bar .gdpr-wrapper {
+    padding: 20px 10px;
+}
+
+#menu-item-7208 a:after {
+ font-family: fontawesome;
+ content: '\f0f2';
+ padding-left: 6px;
+}			</style>
+		
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-K47WKMR');
+    </script>
+    <!-- End Google Tag Manager -->
+
+<!-- Google Structured Data - Social Profile  https://developers.google.com/search/docs/data-types/social-profile-->
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "Sematext Group",
+  "url": "https://sematext.com",
+  "sameAs": [
+    "https://twitter.com/sematext",
+    "https://www.facebook.com/Sematext/",
+    "https://github.com/sematext",
+    "https://plus.google.com/+SematextGroup",
+    "https://www.linkedin.com/company/294493/"
+  ]
+}
+</script>
+
+
+    <!-- Hotjar Tracking Code for sematext.com -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:1559295,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+
+</head>
+<body class="post-template-default single single-post postid-50644 single-format-standard group-blog">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K47WKMR"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+<a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+<div id="page" class="hfeed site">
+
+    <header id="masthead" class="site-header" role="banner">
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+			<div class="container">
+				<div class="row">
+					<div class="site-navigation-inner">
+						<div class="navbar-header">
+							<button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+                            <div id="logo">
+								<a href="https://sematext.com/">
+                                    <img src="https://sematext.com/wp-content/themes/sematext-next/inc/images/sematext-logo.svg" alt="Sematext"/>
+                                </a>
+							</div>
+						</div>
+						<div class="collapse navbar-collapse navbar-ex1-collapse"><ul id="menu-main-navigation" class="nav navbar-nav"><li id="menu-item-7185" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7185 dropdown"><button title="Products" href="#" data-toggle="dropdown" class="dropdown-toggle">Products <span class="caret"></span></button>
+<ul role="menu" class=" dropdown-menu">
+	<li id="menu-item-39760" class="menu-item menu-item-type-yawp_wim menu-item-object-yawp_wim menu-item-39760">				<div class="yawp_wim_wrap">
+					<div class="widget-area">
+						<div id="text-17" class="yawp_wim_widget widget_text">			<div class="textwidget"><div class="mm-v5">
+<div class="mm-v5-products">
+<ul class="mm-ul-prod-cloud" role="menu">
+<li id="mm-cloud">
+<div class="mm-prod-txt"><a title="Sematext Cloud" href="/cloud/"><strong>Sematext Cloud</strong><br />
+All-in-one monitoring solution: Metrics, Logs, User Analysis &amp; Tracing, finally together.</a></div>
+</li>
+</ul>
+<ul class="mm-ul-aux" role="menu">
+<li id="mm-updates"><a title="Product Updates" href="/product-updates/">Product Updates</a></li>
+<li id="mm-docs"><a title="Sematext Docs" href="https://sematext.com/docs" target="_blank" rel="noopener noreferrer">Documentation</a></li>
+<li id="mm-pricing"><a title="Plans and Pricing" href="/pricing/">Plans &amp; Pricing</a></li>
+</ul>
+<ul class="mm-ul-prods" role="menu">
+<li id="mm-logs">
+<div class="mm-prod-txt"><a title="Logsene" href="/logsene/"><strong>Logs</strong><br />
+Hassle-free Log Management and analytics</a></div>
+<div class="mm-prod-tag"><a title="Logsene Pricing" href="/pricing/#logsene"><mark>Plans &amp; Prices</mark></a></div>
+</li>
+<li id="mm-spm">
+<div class="mm-prod-txt"><a title="Infrastructure Monitoring" href="/spm/"><strong>Infrastructure Monitoring</strong><br />
+Map and monitor your whole infrastructure in real-time</a></div>
+<div class="mm-prod-tag"><a title="Infrastructure Monitoring Pricing" href="/pricing/#spm"><mark>Plans &amp; Prices</mark></a></div>
+</li>
+<li id="mm-experience">
+<div class="mm-prod-txt"><a title="Real User Monitoring" href="/experience/"><strong>Experience</strong><br />
+Improve your customers&#8217; digital experience with Real User Monitoring</a></div>
+<div class="mm-prod-tag"><a title="Sematext Experience Pricing" href="/pricing/#experience"><mark>Plans &amp; Prices</mark></a></div>
+</li>
+<li id="mm-tracing">
+<div class="mm-prod-txt"><a title="APM / Tracing" href="/tracing/"><strong>Tracing</strong><br />
+Optimize end-to-end application performance</a></div>
+<div class="mm-prod-tag"><mark>coming soon</mark></div>
+</li>
+<li id="mm-synthetic">
+<div class="mm-prod-txt"><a title="Synthetic Monitoring" href="/synthetic-monitoring/"><strong>Synthetics</strong><br />
+Monitor performance and availability of your site and APIs</a></div>
+<div class="mm-prod-tag"><a title="Sematext Synthetics Pricing" href="/pricing/#synthetics"><mark>Plans &amp; Prices</mark></a></div>
+</li>
+</ul>
+<ul class="mm-ul-prod-enterprise" role="menu">
+<li id="mm-enterprise">
+<div class="mm-prod-txt"><a title="Sematext Enterprise" href="/enterprise/"><strong>Sematext Enterprise</strong><br />
+Run Sematext Cloud on your infrastructure</a></div>
+</li>
+</ul>
+</div>
+<div class="mm-v5-capabilities">
+<h3>Main Capabilities</h3>
+<ul class="mm-ul-list" role="menu">
+<li><a title="APM" href="/apm/">Application Performance Monitoring</a></li>
+<li><a title="Server Monitoring" href="/server-monitoring/">Server Monitoring</a></li>
+<li><a title="Docker Logs and Metrics" href="/docker/">Docker Logs and Metrics</a></li>
+<li><a title="Kubernetes Logs and Metrics" href="/kubernetes/">Kubernetes Logs and Metrics</a></li>
+<li><a title="Process Monitoring" href="/process-monitoring/">Process Monitoring</a></li>
+<li><a title="Database Monitoring" href="/database-monitoring/">Database Monitoring</a></li>
+<li><a title="Network Monitoring" href="/network-monitoring/">Network Monitoring</a></li>
+<li><a title="Java Monitoring" href="/java-monitoring/">JVM Monitoring</a></li>
+<li><a title="Metrics and Logs" href="/metrics-and-logs/">Metrics and Logs</a></li>
+<li><a title="Inventory Monitoring" href="/inventory-monitoring/">Inventory Monitoring</a></li>
+<li><a title="Alerts" href="/alerts/">Alerts</a></li>
+<li><a title="Events" href="/events/">Events</a></li>
+<li><a title="Integrations" href="/integrations/">Integrations</a></li>
+<li><a title="API" href="/api/">API</a></li>
+</ul>
+</div>
+</div>
+</div>
+		</div>					</div>
+				</div>
+				</li>
+	<li id="menu-item-7189" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7189"><a title="SPM &#8211; Infrastructure Pefrormance Monitoring" href="https://sematext.com/spm/"><span class="glyphicon SPM &#8211; Infrastructure Pefrormance Monitoring"></span>&nbsp;Infrastructure Monitoring</a></li>
+	<li id="menu-item-7187" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7187"><a title="Logsene Log Management" href="https://sematext.com/logsene/">Logsene Log Management</a></li>
+	<li id="menu-item-9168" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9168"><a title="Docker Agent" href="https://sematext.com/docker/">Docker Agent</a></li>
+	<li id="menu-item-36105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36105"><a title="Kubernetes Agent" href="https://sematext.com/kubernetes/">Kubernetes Agent</a></li>
+	<li id="menu-item-39771" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39771"><a title="Sematext Cloud" href="https://sematext.com/cloud/">Sematext Cloud</a></li>
+	<li id="menu-item-9350" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9350"><a title="Logagent" href="https://sematext.com/logagent/">Logagent</a></li>
+</ul>
+</li>
+<li id="menu-item-48437" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48437"><a title="Pricing" href="https://sematext.com/pricing/">Pricing</a></li>
+<li id="menu-item-41576" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-41576 dropdown"><button title="Services" href="#" data-toggle="dropdown" class="dropdown-toggle">Services <span class="caret"></span></button>
+<ul role="menu" class=" dropdown-menu">
+	<li id="menu-item-7190" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7190 dropdown"><a title="Consulting" href="#">Consulting</a>
+	<ul role="menu" class=" dropdown-menu">
+		<li id="menu-item-7191" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7191"><a title="Consulting Overview" href="https://sematext.com/consulting/">Consulting Overview</a></li>
+		<li id="menu-item-7194" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7194"><a title="Solr Consulting" href="https://sematext.com/consulting/solr/">Solr Consulting</a></li>
+		<li id="menu-item-7192" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7192"><a title="Elasticsearch Consulting" href="https://sematext.com/consulting/elasticsearch/">Elasticsearch Consulting</a></li>
+		<li id="menu-item-7193" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7193"><a title="Logging Consulting" href="https://sematext.com/consulting/logging/">Logging Consulting</a></li>
+	</ul>
+</li>
+	<li id="menu-item-7196" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7196 dropdown"><a title="Support" href="#">Support</a>
+	<ul role="menu" class=" dropdown-menu">
+		<li id="menu-item-7197" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7197"><a title="Support Overview" href="https://sematext.com/support/">Support Overview</a></li>
+		<li id="menu-item-7199" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7199"><a title="Solr Support" href="https://sematext.com/support/solr-production-support/">Solr Support</a></li>
+		<li id="menu-item-7198" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7198"><a title="Elasticsearch Support" href="https://sematext.com/support/elasticsearch-production-support/">Elasticsearch Support</a></li>
+	</ul>
+</li>
+	<li id="menu-item-7200" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7200 dropdown"><a title="Training" href="#">Training</a>
+	<ul role="menu" class=" dropdown-menu">
+		<li id="menu-item-7201" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7201"><a title="Training Overview" href="https://sematext.com/training/">Training Overview</a></li>
+		<li id="menu-item-7203" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7203"><a title="Solr Training" href="https://sematext.com/training/solr/">Solr Training</a></li>
+		<li id="menu-item-7202" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7202"><a title="Elasticsearch Training" href="https://sematext.com/training/elasticsearch/">Elasticsearch Training</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-7204" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-7204 dropdown"><button title="Resources" href="https://sematext.com/resources/" data-toggle="dropdown" class="dropdown-toggle">Resources <span class="caret"></span></button>
+<ul role="menu" class=" dropdown-menu">
+	<li id="menu-item-45056" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-45056 dropdown"><a title="How to" href="#">How to</a>
+	<ul role="menu" class=" dropdown-menu">
+		<li id="menu-item-45059" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45059"><a title="eBooks" href="https://sematext.com/resources/ebooks/">eBooks</a></li>
+		<li id="menu-item-45060" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45060"><a title="Cheat Sheets" href="https://sematext.com/resources/cheat-sheets/">Cheat Sheets</a></li>
+		<li id="menu-item-45061" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45061"><a title="Product Videos" href="https://sematext.com/resources/product-videos/">Product Videos</a></li>
+		<li id="menu-item-45062" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45062"><a title="Slide Decks" href="https://sematext.com/resources/slide-decks/">Slide Decks</a></li>
+		<li id="menu-item-45063" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45063"><a title="Publications" href="https://sematext.com/resources/publications/">Publications</a></li>
+	</ul>
+</li>
+	<li id="menu-item-46486" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-46486 dropdown"><a title="Docs" href="https://sematext.com/docs/">Docs</a>
+	<ul role="menu" class=" dropdown-menu">
+		<li id="menu-item-46487" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-46487"><a title="Monitoring" href="https://sematext.com/docs/monitoring/">Monitoring</a></li>
+		<li id="menu-item-46488" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-46488"><a title="Logs" href="https://sematext.com/docs/logs/">Logs</a></li>
+		<li id="menu-item-48070" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48070"><a title="Experience" href="https://sematext.com/docs/experience/">Experience</a></li>
+		<li id="menu-item-50380" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50380"><a title="Synthetics" href="https://sematext.com/docs/synthetics/">Synthetics</a></li>
+		<li id="menu-item-46489" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-46489"><a title="Tracing" href="https://sematext.com/docs/tracing/">Tracing</a></li>
+	</ul>
+</li>
+	<li id="menu-item-7195" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-has-children menu-item-7195 dropdown"><a title="Blog" href="https://sematext.com/blog/">Blog</a>
+	<ul role="menu" class=" dropdown-menu">
+		<li id="menu-item-49337" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-49337"><a title="Real User Monitoring" href="https://sematext.com/category/monitoring/real-user-monitoring/">Real User Monitoring</a></li>
+		<li id="menu-item-49338" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-49338"><a title="Logging" href="https://sematext.com/category/logging/">Logging</a></li>
+		<li id="menu-item-49339" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-49339"><a title="Monitoring" href="https://sematext.com/category/monitoring/">Monitoring</a></li>
+		<li id="menu-item-50102" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-50102"><a title="Synthetic Monitoring" href="https://sematext.com/category/synthetic-monitoring/">Synthetic Monitoring</a></li>
+		<li id="menu-item-49340" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-49340"><a title="Training" href="https://sematext.com/category/training/">Training</a></li>
+		<li id="menu-item-49341" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-49341"><a title="Search" href="https://sematext.com/category/search/">Search</a></li>
+		<li id="menu-item-49342" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49342"><a title="See all posts" href="https://sematext.com/blog/?grid=1">See all posts</a></li>
+	</ul>
+</li>
+	<li id="menu-item-45057" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-45057 dropdown"><a title="Why Sematext" href="#">Why Sematext</a>
+	<ul role="menu" class=" dropdown-menu">
+		<li id="menu-item-45064" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45064"><a title="Case Studies" href="https://sematext.com/resources/case-studies/">Case Studies</a></li>
+		<li id="menu-item-45071" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45071"><a title="Industry Comparisons" href="https://sematext.com/resources/industry-comparisons/">Industry Comparisons</a></li>
+	</ul>
+</li>
+	<li id="menu-item-45058" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-45058 dropdown"><a title="Open Source Agents" href="#">Open Source Agents</a>
+	<ul role="menu" class=" dropdown-menu">
+		<li id="menu-item-45065" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45065"><a title="Docker Agents" href="https://sematext.com/docker/">Docker Agents</a></li>
+		<li id="menu-item-45066" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45066"><a title="Kubernetes Agents" href="https://sematext.com/kubernetes/">Kubernetes Agents</a></li>
+		<li id="menu-item-45067" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45067"><a title="Logagent" href="https://sematext.com/logagent/">Logagent</a></li>
+	</ul>
+</li>
+	<li id="menu-item-47266" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-47266 dropdown"><a title="Guides" href="https://sematext.com/guides/">Guides</a>
+	<ul role="menu" class=" dropdown-menu">
+		<li id="menu-item-47265" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47265"><a title="Log Management Guide" href="https://sematext.com/guides/log-management/">Log Management Guide</a></li>
+		<li id="menu-item-47783" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47783"><a title="Elasticsearch Guide" href="https://sematext.com/guides/elasticsearch/">Elasticsearch Guide</a></li>
+		<li id="menu-item-47784" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47784"><a title="Docker Logging Guide" href="https://sematext.com/guides/docker-logs/">Docker Logging Guide</a></li>
+		<li id="menu-item-47918" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47918"><a title="Solr Guide" href="https://sematext.com/guides/solr/">Solr Guide</a></li>
+		<li id="menu-item-47940" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47940"><a title="Real User Monitoring" href="https://sematext.com/guides/what-is-real-user-monitoring/">Real User Monitoring</a></li>
+		<li id="menu-item-48212" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48212"><a title="Java Monitoring Guide" href="https://sematext.com/guides/java-monitoring/">Java Monitoring Guide</a></li>
+		<li id="menu-item-48523" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48523"><a title="ELK Stack Guide" href="https://sematext.com/guides/elk-stack/">ELK Stack Guide</a></li>
+		<li id="menu-item-48908" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48908"><a title="Application Performance Monitoring Guide" href="https://sematext.com/guides/application-performance-monitoring/">Application Performance Monitoring Guide</a></li>
+		<li id="menu-item-49271" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49271"><a title="Kubernetes Logging Guide" href="https://sematext.com/guides/kubernetes-logging/">Kubernetes Logging Guide</a></li>
+		<li id="menu-item-49388" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49388"><a title="Kubernetes Monitoring Guide" href="https://sematext.com/guides/kubernetes-monitoring/">Kubernetes Monitoring Guide</a></li>
+		<li id="menu-item-49770" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49770"><a title="Synthetic Monitoring Guide" href="https://sematext.com/guides/synthetic-monitoring/">Synthetic Monitoring Guide</a></li>
+	</ul>
+</li>
+	<li id="menu-item-45484" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-45484 dropdown"><a title="Most Popular" href="#">Most Popular</a>
+	<ul role="menu" class=" dropdown-menu">
+		<li id="menu-item-45485" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45485"><a title="Elasticsearch DevOps Cheat Sheet" href="https://sematext.com/elasticsearch-devops-cheat-sheet/">Elasticsearch DevOps Cheat Sheet</a></li>
+		<li id="menu-item-45486" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45486"><a title="Elasticsearch Developer Cheat Sheet" href="https://sematext.com/resources/elasticsearch-developer-cheat-sheet/">Elasticsearch Developer Cheat Sheet</a></li>
+		<li id="menu-item-45489" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45489"><a title="Solr Cheat Sheet" href="https://sematext.com/solr-cheat-sheet/">Solr Cheat Sheet</a></li>
+		<li id="menu-item-45507" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45507"><a title="Kubernetes Cheat Sheet" href="https://sematext.com/kubernetes-cheat-sheet/">Kubernetes Cheat Sheet</a></li>
+		<li id="menu-item-45491" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45491"><a title="Docker Commands Cheat Sheet" href="https://sematext.com/docker-commands-cheat-sheet/">Docker Commands Cheat Sheet</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-7205" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7205 dropdown"><button title="About" href="#" data-toggle="dropdown" class="dropdown-toggle">About <span class="caret"></span></button>
+<ul role="menu" class=" dropdown-menu">
+	<li id="menu-item-7206" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7206"><a title="Company" href="https://sematext.com/about/">Company</a></li>
+	<li id="menu-item-7210" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7210"><a title="Customers" href="https://sematext.com/customers/">Customers</a></li>
+	<li id="menu-item-43967" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43967"><a title="Case Studies" href="https://sematext.com/resources/case-studies/">Case Studies</a></li>
+	<li id="menu-item-7213" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7213"><a title="Partners" href="https://sematext.com/partners/">Partners</a></li>
+	<li id="menu-item-43471" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43471"><a title="Testimonials" href="https://sematext.com/clients/#testimonials">Testimonials</a></li>
+	<li id="menu-item-7208" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7208"><a title="Jobs" href="https://sematext.com/jobs/">Jobs</a></li>
+	<li id="menu-item-7212" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7212"><a title="Engineering" href="https://sematext.com/engineering/">Engineering</a></li>
+	<li id="menu-item-7207" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7207"><a title="Contact" href="https://sematext.com/contact/">Contact</a></li>
+	<li id="menu-item-49967" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49967"><a title="Status" href="https://status.sematext.com/">Status</a></li>
+</ul>
+</li>
+<li id="menu-item-46020" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-46020"><a title="See Live Demo" href="https://apps.sematext.com/demo">See Live Demo</a></li>
+<li id="menu-item-7326" class="btn btn-warning menu-item menu-item-type-custom menu-item-object-custom menu-item-7326"><a title="Start Free Trial" href="https://apps.sematext.com/ui/registration">Start Free Trial</a></li>
+<li id="menu-item-7327" class="btn btn-primary btn-outline menu-item menu-item-type-custom menu-item-object-custom menu-item-7327"><a title="Login" href="https://apps.sematext.com/ui/login/">Login</a></li>
+</ul></div>					</div>
+				</div>
+			</div>
+		</nav><!-- .site-navigation -->
+
+	</header><!-- #masthead -->
+
+
+
+	<div id="content" class="site-content">
+
+		<div class="top-section">
+								</div>
+
+		<div class="container-fluid main-content-area">
+
+<style media="screen">
+.hljs {
+    display: block;
+    overflow-x: auto;
+    background: #011a27;
+    line-height: 1.65;
+    white-space: inherit;
+}
+.hljs, .hljs-subst { color: #ccc; }
+.hljs-comment {
+    color: #777;
+    font-style: italic;
+}
+.hljs-keyword, .hljs-attribute, .hljs-selector-tag, .hljs-meta-keyword, .hljs-doctag, .hljs-name {
+    color: #fff;
+    font-weight: bold
+}
+.hljs-type, .hljs-string, .hljs-number, .hljs-selector-id, .hljs-selector-class, .hljs-quote, .hljs-template-tag, .hljs-deletion {
+    color: #09a;
+    font-weight: bold;
+}
+.hljs-title, .hljs-section {
+    color: #f70;
+    font-weight: bold
+}
+.hljs-regexp, .hljs-symbol, .hljs-variable, .hljs-template-variable, .hljs-link, .hljs-selector-attr, .hljs-selector-pseudo { color: #cc3 }
+.hljs-literal { color: #2586e4 }
+.hljs-built_in, .hljs-bullet, .hljs-code, .hljs-addition { color: #ff842c }
+.hljs-meta { color: #1f7199 }
+.hljs-meta-string { color: #4d99bf }
+.hljs-emphasis { font-style: italic }
+.hljs-strong { font-weight: bold }
+
+a#continue-conversation-twitter { line-height: 1.8 }
+a#continue-conversation-twitter:before {
+    content: '\f202';
+    font: normal 24px/1 'social-logos' !important;
+    display: inline-block;
+    padding: 5px 0 0 0;
+    margin: 0 8px 0 0;
+    position: relative;
+    top: 2px;
+}
+a#continue-conversation-twitter:active,
+a#continue-conversation-twitter:focus {
+    color: #fff;
+}
+
+#scroll-status-bar {
+    position: fixed;
+    height: 3px;
+    width: 100%;
+    z-index: 1000;
+    overflow: hidden;
+}
+#scroll-status-percent {
+    height: 100%;
+    width: 0%;
+    background: rgb(30, 141, 232);
+    box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, .1);
+    transition: width .25s ease-in-out;
+}
+</style>
+
+
+<div id="scroll-status-bar"><div id="scroll-status-percent"></div></div>
+
+
+<div class="blog-post-hero container-fluid">
+    <div class="blog-post-hero-bg">
+        <div class="blog-post-hero-bg-img" style="background-image: url(https://sematext.com/wp-content/uploads/2020/08/java-Eceptions-handling-2.jpg)"></div>
+    </div>
+    <div class="container"><img src="https://sematext.com/wp-content/uploads/2020/08/java-Eceptions-handling-2.jpg" id="the-featured-image" /></div>
+</div>
+
+<div class="container-fluid container-single-blog-post">
+<div class="container">
+
+
+    <article class="single-blog-post" id="post-50644">
+
+        <aside>
+            <div class="aside-column">
+                <div class="aside-sticky">
+                    <div id="toc-nav-status">Java Exception Handling: A Tutorial on How to Catch Errors and Improve Performance</div>
+                    <div id="toc-nav-wrapper">
+                        <nav id="toc-nav"></nav>
+                    </div>
+                    <div class="aside-troubleshooting"></div>
+                </div>
+            </div>
+        </aside>
+
+        <main>
+
+            <!-- Header -->
+            <header>
+
+                <div class="blog-post-categories">
+                                         <a href="https://sematext.com/category/logging/" rel="category tag">Logging</a>                </div>
+
+                <div class="blog-post-title">
+                    <h1 elementtiming="post-header">Java Exception Handling: A Tutorial on How to Catch Errors and Improve Performance</h1>
+                    <p><img src="https://secure.gravatar.com/avatar/d05d7fbddd69c91eefaad0b9ec624111?s=32&d=mm&r=g" srcset="https://secure.gravatar.com/avatar/d05d7fbddd69c91eefaad0b9ec624111?s=64&d=mm&r=g" 2x width="32" height="32" alt="Rafal Kuć" /> <span class="author vcard"><a class="url fn n" href="https://sematext.com/blog/author/kucrafal/">Rafal Kuć</a></span> on <span class="posted-on"><a href="https://sematext.com/blog/java-exceptions/" rel="bookmark"><time class="entry-date published" datetime="2020-08-19T06:43:33-04:00">August 19, 2020</time><time class="updated" datetime="2020-08-20T11:09:47-04:00">August 20, 2020</time></a></span></p>
+                </div>
+
+                <figure class="blog-post-featured-image">
+                    <img elementtiming="post-featured-image" src="https://sematext.com/wp-content/uploads/2020/08/java-Eceptions-handling-2.jpg" />
+                </figure>
+
+                                    <style>.blog-post-featured-image { background-image: url(https://sematext.com/wp-content/uploads/2020/08/java-Eceptions-handling-2.jpg); }</style>
+                                            </header>
+
+            <!-- Main Content -->
+            <section>
+
+                <div id="the-content">
+                    <p>Error handling is often a significant part of the application code. You might use conditionals to handle cases where you expect a certain state and want to avoid erroneous execution &#8211; for example, division by zero. However, there are cases where conditions are not known or are well hidden because of third party code. In other cases, code is designed to create an exception and throw it up the stack to allow for the graceful handling of an error at a higher level.</p>
+<p>Using exceptions is very handy; they let you separate the business logic from the application code for handling errors. However, exceptions are neither free or cheap. Throwing an exception requires the JVM to perform operations like gathering the full stack trace of the method calls and passing it to the method that is responsible for handling the exception. In other words, it requires additional resources compared to a simple conditional.</p>
+<p>No matter how expensive the exceptions are, they are invaluable for troubleshooting issues. Correlating exceptions with other data like metrics and <a href="https://sematext.com/guides/log-management/">various application logs</a> can help with resolving your problems fast and in a very efficient manner. This is precisely why Sematext makes it very easy to correlate <a href="https://sematext.com/metrics-and-logs/">logs and metrics</a>.</p>
+<h2>What Is an Exception in Java?</h2>
+<p>An Exception is an event that causes your normal Java application flow to be disrupted. Exceptions can be caused by using a reference that is not yet initialized, dividing by zero, going beyond the length of an array, or even JVM not being able to assign objects on the heap.</p>
+<p>In Java, an exception is an Object that wraps the error that caused it and includes information like:</p>
+<ul>
+<li>The type of error that caused the exception with the information about it.</li>
+<li>The stack trace of the method calls.</li>
+<li>Additional custom information that is related to the error.</li>
+</ul>
+<p>Various Java libraries throw exceptions when they hit a state of execution that shouldn&#8217;t happen &#8211; from the standard Java SDK to the enormous amounts of open source code that is available as a third-party library.</p>
+<p>Exceptions can be created automatically by the JVM that is running our code or explicitly our code itself. We can extend the classes that are responsible for exceptions and create our own, specialized exceptions that handle unexpected situations. But keep in mind that throwing an exception doesn&#8217;t come for free. It is expensive. The larger the call stack the more expensive the exception.</p>
+<h2>Exception Class Hierarchy</h2>
+<p>Java is an object-oriented language, and thus, every class will extend the java.lang.Object. The same goes for the Throwable class, which is the base class for the errors and exceptions in Java. The following picture illustrates the class hierarchy of the Throwable class and its most common subclasses:</p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="dozyload"  data-src="https://sematext.com/wp-content/uploads/2020/08/java-exceptions-post-1.png" /></p>
+<h2>The Difference Between an Error and an Exception</h2>
+<p>Before going into details about the Exception class, we should ask one fundamental question: What is the difference between an Error and an Exception in Java?</p>
+<p>To answer the question, let&#8217;s look at <a href="https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/Error.html">Javadocs</a> and start from the Throwable class. The Throwable class is the mother of all errors &#8211; the superclass of all errors and exceptions that your Java code can produce. Only objects that are instances of the Throwable class or any of its subclasses can be thrown by the code running inside the JVM or can be declared in the methods throw clause. There are two main implementations of the Throwable class.</p>
+<p>An Error is a subclass of Throwable that represents a serious problem that a reasonable application should not try to catch. The method does not have to declare an Error or any of its subclasses in its throws clause for it to be thrown during the execution of a method. The most common subclasses of the Error class are OutOfMemoryError and StackOverflowError classes. The first one represents JVM not being able to create a new object; we discussed potential causes in <a href="https://sematext.com/blog/java-garbage-collection/">JVM garbage collector</a>. The second error represents an issue when the application recurses too deeply.</p>
+<p>The Exception and its subclasses, on the other hand, represent situations that an application should catch and try to handle. There are lots of implementations of the Exception class that represent situations that your application can gracefully handle. The FileNotFoundException, SocketException, or NullPointerException are just a few examples that you&#8217;ve probably come across when writing Java applications.</p>
+<h2>Types of Java Exceptions</h2>
+<p>There are multiple implementations of the Exception class in Java. They come from the Java Development Kit itself, but also from various libraries and applications that you might be using when writing your own code. We will not discuss every Exception subclass that you can encounter, but there are two main types that you should be aware of &#8211; the checked and unchecked, aka runtime exceptions. Let&#8217;s look into them in greater detail.</p>
+<h3>Checked Exceptions</h3>
+<p>The checked exceptions are the ones that implement the Exception class and not the RuntimeException. They are called checked exceptions because the compiler verifies them during the compile-time and refuses to compile the code if such exceptions are not handled or declared. Such exceptions are usually used to notify the user that a method can result in a state that needs to be handled. For example, the FileNotFoundException is an example of such an exception.</p>
+<p>In order for a method or constructor to throw a checked exception it needs to be explicitly declared:</p>
+<pre>public CheckedExceptions() throws FileNotFoundException {
+  throw new FileNotFoundException("File not found");
+}
+
+public void throwsExample() throws FileNotFoundException {
+  throw new FileNotFoundException("File not found");
+}</pre>
+<p>You can see that in both cases we explicitly have the throws clause mentioning the FileNotFoundException that can be thrown by the execution of the constructor of the throwsExample method. Such code will be successfully compiled and can be executed.</p>
+<p>On the other hand, the following code will not compile:</p>
+<pre>public void wrongThrowsExample() {
+  throw new FileNotFoundException("File not found");
+}</pre>
+<p>The reason for the compiler not wanting to compile the above code will be raising the checked exception and not processing it. We need to either include the throws clause or handle the exception in the try/catch/finally block. If we were to try to compile the above code as is the following error would be returned by the compiler:</p>
+<pre>/src/main/java/com/sematext/blog/java/CheckedExceptions.java:18: error: unreported exception FileNotFoundException; must be caught or declared to be thrown
+    throw new FileNotFoundException("File not found");
+    ^</pre>
+<h3>Unchecked Exceptions / Runtime Exceptions</h3>
+<p>The unchecked exceptions are the second type of exceptions in Java. The unchecked exceptions in Java are the ones that implement the <a href="https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/RuntimeException.html">RuntimeException</a> class. Those exceptions can be thrown during the normal operation of the Java Virtual Machine. Unchecked exceptions do not need to be declared in the method throws clause in order to be thrown. For example, this block of code will compile and run without issues:</p>
+<pre>public class UncheckedExceptions {
+  public static void main(String[] args) {
+    UncheckedExceptions ue = new UncheckedExceptions();
+    ue.run();
+  }
+
+  public void run() {
+    throwRuntimeException();
+  }
+
+  public void throwRuntimeException() {
+    throw new NullPointerException("Null pointer");
+  }
+}</pre>
+<p>We create an UncheckedExceptions class instance and run the run method. The run method calls the throwRuntimeException method which creates a new NullPointerException. Because the <a href="https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/NullPointerException.html">NullPointerException</a> is a subclass of the <a href="https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/RuntimeException.html">RuntimeException</a> we don&#8217;t need to declare it in the throws clause.</p>
+<p>The code compiles and propagates the exception up to the main method. We can see that in the output when the code is run:</p>
+<pre>Exception in thread "main" java.lang.NullPointerException: Null pointer
+        at com.sematext.blog.java.UncheckedExceptions.throwRuntimeException(UncheckedExceptions.java:14)
+        at com.sematext.blog.java.UncheckedExceptions.run(UncheckedExceptions.java:10)
+        at com.sematext.blog.java.UncheckedExceptions.main(UncheckedExceptions.java:6)</pre>
+<p>This is exactly what we expected.</p>
+<p>The most common subclasses of the RuntimeException that you probably saw already are <a href="https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/ClassCastException.html">ClassCastException</a>, <a href="https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/util/ConcurrentModificationException.html">ConcurrentModificationException</a>, <a href="https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/IllegalArgumentException.html">IllegalArgumentException</a>, or the everyone&#8217;s favorite <a href="https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/NullPointerException.html">NullPointerException</a>.</p>
+<p>Let&#8217;s now look at how we throw exceptions in Java.</p>
+<h2>Throwing Exceptions</h2>
+<p>An Exception in Java can be thrown by using the throw keyword and creating a new Exception or re-throwing an already created exception. For example, the following very naive and simple method creates an instance of the File class and checks if the file exists. If the file doesn&#8217;t exist the method throws a new IOException:</p>
+<pre>public File openFile(String path) throws IOException {
+  File file = new File(path);
+  if (!file.exists()) {
+    throw new IOException(String.format("File %s doesn't exist", path));
+  }
+  // continue execution of the business logic
+  return file;
+}</pre>
+<p>You can also re-throw an Exception that was thrown inside the method you are executing. This can be done by the try-catch block:</p>
+<pre>public class RethrowException {
+  public static void main(String[] args) throws IOException {
+    RethrowException exec = new RethrowException();
+    exec.run();
+  }
+
+  public void run() throws IOException {
+    try {
+     methodThrowingIOE();
+    } catch (IOException ioe) {
+      // do something about the exception
+      throw ioe;
+    }
+  }
+
+  public void methodThrowingIOE() throws IOException {
+    throw new IOException();
+  }
+}</pre>
+<p>You can see that the run method re-throws the IOException that is created in the methodThrowingIOE. If you plan on doing some processing of the exception, you can catch it as in the above example and throw it further. However, keep in mind that in most cases, this is not a good practice. You shouldn&#8217;t catch the exception, process it, and push it up the execution stack. If you can&#8217;t process it, it is usually better to pack it into a more specialized Exception class, so that a dedicated error processing code can take care of it. You can also just decide that you can&#8217;t process it and just throw it:</p>
+<pre>public class RethrowException {
+  public static void main(String[] args) throws IOException {
+    RethrowException exec = new RethrowException();
+    exec.run();
+  }
+
+  public void run() throws IOException {
+    try {
+     methodThrowingIOE();
+    } catch (IOException ioe) {
+      throw ioe;
+    }
+  }
+
+  public void methodThrowingIOE() throws IOException {
+    throw new IOException();
+  }
+}</pre>
+<p>There are additional cases, but we will discuss them when talking about how to catch exceptions in Java.</p>
+<h2>How Do You Handle Exceptions in Java?</h2>
+<p>We already know that Exceptions in Java are there to signal the abnormal state of the application execution. We also know that they exist so that we can deal with the state of the application that is not normal and continue the execution of the business code. Processing the exception, catching it, or even throwing it further up is what we call handling of an exception in Java.</p>
+<p>In our application, we don&#8217;t want to just throw the created exception to the top of the call stack, for example, to the main method. That would mean that each and every exception that is thrown would crash the application and this is not what should happen. Instead, we want to handle exceptions, at least the ones that we can deal with, and either help fixing the problem or fail gracefully.</p>
+<p>To see how we can deal with exceptions in Java, let&#8217;s discuss the following exception handling methods.</p>
+<h3>Try-catch Block</h3>
+<p>The first thing that you can do with code that is supposed to generate an exception is to catch it. The exception can be either checked or unchecked. In the first case, the compiler will tell you which kind of exceptions need to be caught or defined in the method throws clause for the code to compile. In the case of unchecked exceptions, we are not obligated to catch them. We don&#8217;t have to catch them, but it may be a good idea, at least in some cases. For example, there is a DOMException or DateTimeException that indicate issues that you can gracefully handle.</p>
+<p>The code that might generate an exception should be placed in the try block which should be followed by the catch block. For example, let&#8217;s look at the code of the following openFileReader method:</p>
+<pre>public Reader openFileReader(String filePath) {
+  try {
+    return new FileReader(filePath);
+  } catch (FileNotFoundException ffe) {
+    // tell the user that the file was not found
+  }
+  return null;
+}</pre>
+<p>The method tries to create a FileReader class instance. The constructor of that class can throw a checked FileNotFoundException if the file provided as the argument doesn&#8217;t exist. We could just include the FileNotFoundException in the throws clause of our openFileReader method or catch it in the catch section just like we did. In the catch section, we can do whatever we need to get a new file location, create a new file, and so on.</p>
+<p>If we would like to just throw it further up the call stack the code could be further simplified:</p>
+<pre>public Reader openFileReaderWithThrows(String filePath) throws FileNotFoundException {
+  return new FileReader(filePath);
+}</pre>
+<p>This passes the responsibility of handling the FIleNotFoundException to the code that calls it.</p>
+<h4>Multiple Catch Block</h4>
+<p>We are not limited to a single catch block in the try-catch block. We can have multiple try-catch blocks. Let&#8217;s say that we have a method that lists more than a single exception in its throws clause, like this:</p>
+<pre>public void readAndParse(String file) throws FileNotFoundException, ParseException {
+  // some business code
+}</pre>
+<p>In order to compile and run this we need multiple catch blocks to handle each of the listed exceptions:</p>
+<pre>public void run(String file) {
+  try {
+    readAndParse(file);
+  } catch (FileNotFoundException ex) {
+    // do something when file is not found
+  } catch (ParseException ex) {
+    // do something if the parsing fails
+  }
+}</pre>
+<p>Such code organization can be used when dealing with multiple exceptions that need to be handled differently. Hypothetically, the above code could ask for a new file location when the FileNotFoundException happens and inform the user of the issues with parsing when the ParseException happens.</p>
+<p>There is one more thing we should mention when it comes to multiple catch blocks. You need to remember that the order of the catch blocks matters. If you have a more specialized exception in the catch block after the more general exception the more specialized catch block will never be executed. Let&#8217;s look at the following example:</p>
+<pre>public void runTwo(String file) {
+  try {
+    readAndParse(file);
+  } catch (Exception ex) {
+    // this block will catch all exceptions
+  } catch (ParseException ex) {
+    // this block will not be executed
+  }
+}</pre>
+<p>Because the first catch block catches the Exception the catch block with the ParseException will never be executed. That&#8217;s because the ParseException is a subclass of the Exception.</p>
+<h4>Catching Multiple Exceptions</h4>
+<p>To process multiple exceptions with the came logic, you can list them all inside a single catch block. Let&#8217;s redo the above example with the FileNotFoundException and the ParseException to use a single catch block:</p>
+<pre>public void runSingleCatch(String file) {
+  try {
+    readAndParse(file);
+  } catch (FileNotFoundException | ParseException ex) {
+    // do something when file is not found
+  }
+}</pre>
+<p>You can see how easy it is &#8211; you can connect multiple exceptions together using the | character. If any of these exceptions is thrown in the try block the execution will continue inside the catch block.</p>
+<h3>The Finally Block</h3>
+<p>In addition to try and the catch blocks, there is one additional section that may come in handy &#8211; the finally block. The finally block is the last section in your try-catch-finally expression and will always get executed &#8211; either after the try or after the catch. It will be executed even if you use the return statement in the try block, which by the way, you shouldn&#8217;t do.</p>
+<p>Let&#8217;s look at the following example:</p>
+<pre>public void exampleOne() {
+  FileReader reader = null;
+  try {
+    reader = new FileReader("/tmp/somefile");
+    // do some processing
+  } catch (FileNotFoundException ex) {
+    // do something
+  } finally {
+    if (reader != null) {
+      try {
+        reader.close();
+      } catch (IOException ex) {
+        // do something
+      }
+    }
+  }
+}</pre>
+<p>You can see the finally block. Keep in mind that you can have at most one finally block present. The way this code will be executed is as follows:</p>
+<ol>
+<li>The JVM will execute the try section first and will try to create the FileReader instance.</li>
+<li>If the /tmp/somefile is present and readable the try block execution will continue.</li>
+<li>If the /tmp/somefile is not present or is not readable the FileNotFoundException will be raised and the execution of the code will go to the catch block.</li>
+<li>After 2) or 3) the finally block will be executed and will try to close the FileReader instance if it is present.</li>
+</ol>
+<p>The finally section will be executed even if we modify the try block and include the return statement. The following code does exactly the same as the one above despite having the return statement at the end of the try block:</p>
+<pre>public void exampleOne() {
+  FileReader reader = null;
+  try {
+    reader = new FileReader("/tmp/somefile");
+    // do something
+    return;
+  } catch (FileNotFoundException ex) {
+    // do something
+  } finally {
+    if (reader != null) {
+      try {
+        reader.close();
+      } catch (IOException ex) {
+        // do something
+      }
+    }
+  }
+}</pre>
+<p>So, why and when to use the finally block? Well, it is a perfect candidate for cleaning up resources, like closing objects, calculating metrics, including logs about operation completion, and so on. Learn more about <a href="https://sematext.com/blog/java-logging/">logging in Java</a> and the <a href="https://sematext.com/blog/java-logging-best-practices/">best practices</a> you should follow to get the most out of your Java application logs.</p>
+<h3>The Try-With-Resources Block</h3>
+<p>The last thing when it comes to handling exceptions in Java is the try-with-resources block. The idea behind that Java language structure is opening one on more resources in the try section that will be automatically closed at the end of the statement. That means that instead of including the finally block we can just open the resources that we need in the try section and rely on the <a href="https://sematext.com/blog/jvm-performance-tuning/">Java Virtual Machine</a> to deal with the closing of the resource.</p>
+<p>For the class to be usable in the try-with-resource block it needs to implement the java.lang.AutoCloseable, which includes every class implementing the java.io.Closeable interface. Keep that in mind.</p>
+<p>An example method that reads a file using the FileReader class which uses the try-with-resources might look as follows:</p>
+<pre>public void readFile(String filePath) {
+  try (FileReader reader = new FileReader(filePath)) {
+    // do something
+  } catch (FileNotFoundException ex) {
+    // do something when file is not found
+  } catch (IOException ex) {
+    // do something when issues during reader close happens
+  }
+}</pre>
+<p>Of course, we are not limited to a single resource and we can have multiple of them, for example:</p>
+<p>public void readFiles(String filePathOne, String filePathTwo) {</p>
+<pre>  try (
+      FileReader readerOne = new FileReader(filePathOne);
+      FileReader readerTwo = new FileReader(filePathTwo);
+  ) {
+    // do something
+  } catch (FileNotFoundException ex) {
+    // do something when file is not found
+  } catch (IOException ex) {
+    // do something when issues during reader close happens
+  }
+}</pre>
+<p>One thing that you have to remember is that you need to process the exceptions that happen during resources closing in the catch section of the try-catch-finally block. That&#8217;s why in the above examples, we&#8217;ve included the IOException in addition to the FileNotFoundException. The IOException may be thrown during FileReader closing and we need to process it.</p>
+<h2>User-defined Exceptions</h2>
+<p>The Throwable and Exception are Java classes and so you can easily extend them and create your own exceptions. Depending on if you need a checked or unchecked exception you can either extend the Exception or the RuntimeException class. To give you a very simple example on how such code might look like, have a look at the following fragment:</p>
+<pre>public class OwnExceptionExample {
+  public void doSomething() throws MyOwnException {
+    // code with very important logic
+    throw new MyOwnException("My Own Exception!");
+  }
+
+  class MyOwnException extends Exception {
+    public MyOwnException(String message) {
+      super(message);
+    }
+  }
+}</pre>
+<p>In the above trivial example we have a new Exception implementation called MyOwnException with a constructor that takes a single argument &#8211; a message. It is an internal class, but usually you would just move it to an appropriate package and start using it in your application code.</p>
+<h2>Java Anti-Patterns</h2>
+<p>As with everything, there are a few bad practices related to handling exceptions in Java. Let&#8217;s discuss them so that you can avoid them.</p>
+<h3>Hiding Exceptions</h3>
+<p>Don&#8217;t hide exceptions unless you don&#8217;t care about the error. Process them, log them, or just print them to the console. Avoid doing things you can see in the following code:</p>
+<pre>try {
+  FileReader reader = new FileReader(filePath);
+  // some business code
+} catch (FileNotFoundException ex) {}</pre>
+<p>As you can see in the code above the FileNotFoundException is hidden and we don&#8217;t have any idea that the creation of the FileReader failed. Of course, the code that runs after the creation of the FileReader would probably fail if it were to operate on that. Now imagine that you are catching exceptions like this:</p>
+<pre>try {
+  FileReader reader = new FileReader(filePath);
+  // some business code
+} catch (Exception ex) {}</pre>
+<p>You would catch lots of exceptions and completely ignore them all. The least you would like to do is fail and log the information so that you can easily find the problem when doing <a href="https://sematext.com/blog/log-analysis/">log analysis</a> or setting up an alert in your <a href="https://sematext.com/blog/log-aggregation/">log centralization</a> solution. Of course, you may want to process the exception, maybe do some interaction with external systems or the user itself, but for sure not hide the problem.</p>
+<p>If you really don&#8217;t want to deal with an exception you can just print it to the log or error stream, for example:</p>
+<pre>try {
+  FileReader reader = new FileReader(filePath);
+  // some business code
+} catch (Exception ex) {
+  ex.printStackTrace();
+}</pre>
+<p>Or even better, if you are using a <a href="https://sematext.com/blog/best-log-management-tools/">centralized logging solution</a> just do the following to store the error log there:</p>
+<pre>try {
+  FileReader reader = new FileReader(filePath);
+  // some business code
+} catch (Exception ex) {
+  LOG.error("Error during FileReader creation", ex);
+}</pre>
+<h3>Overusing Exceptions</h3>
+<p>This may not be true for every situation and for sure makes the code a bit uglier, but if you want to squeeze every bit of performance from your code, try to avoid exceptions when a simple comparison is enough. Look at the following method:</p>
+<pre>public int divide(int dividend, int divisor) {
+  try {
+    return dividend / divisor;
+  } catch (ArithmeticException ex) {
+    // do nothing
+  }
+  return -1;
+}</pre>
+<p>It tries to divide two numbers and catches the ArithmeticException in case of an error. What kind of error can happen here? Well, division by zero is the perfect example. If the divisor argument is 0 the code will throw an exception, catch it in order to avoid failure in the code and continue returning -1. This is not the perfect way to go &#8211; throwing an exception has a performance penalty &#8211; we talk about it later in the blog post. In such cases, you should check the divisor argument and allow the division only if it is not equal to 0, just like this:</p>
+<pre>public int divide(int dividend, int divisor) {
+  if (divisor != 0) {
+    return 10 / divisor;
+  }
+  return -1;
+}</pre>
+<p>The performance of throwing an exception and checking is noticeable. Keep that in mind when writing your code that handles exceptions and situations that should not be allowed.</p>
+<h3>Using Return Statement in The Finally Block</h3>
+<p>The next thing you should avoid is using the return statement in the finally block of your code. Have a look at the following code fragment:</p>
+<pre>public class ReturnInFinally {
+  public static void main(String[] args) {
+    ReturnInFinally app = new ReturnInFinally();
+    app.example();
+    System.out.println("Ended without error");
+  }
+
+  public void example() {
+    try {
+      throw new NullPointerException();
+    } finally {
+      return;
+    }
+  }
+}</pre>
+<p>If you were to run it, it would end up printing the Ended without error to the console. But we did throw the NullPointerException, didn&#8217;t we? Yes, but that would be hidden because of our finally block. We didn&#8217;t catch the exception and according to <a href="https://docs.oracle.com/javase/specs/jls/se14/html/jls-14.html#jls-14.20.2">Java language Exception handling specification</a>, the exception would just be discarded. We don&#8217;t want something like that to happen, because that would mean that we are hiding issues in the code and its execution.</p>
+<h3>Using Throw Statement in The Finally Block</h3>
+<p>A very similar situation to the one above is when you try to throw a new Exception in the finally block. Again, the code speaks louder than a thousand words, so let&#8217;s have a look at the following example:</p>
+<pre>public class ThrowInFinally {
+public static void main(String[] args) {
+ThrowInFinally app = new ThrowInFinally();
+app.example();
+}
+
+public void example() {
+try {
+throw new RuntimeException("Exception in try");
+} finally {
+throw new RuntimeException("Exception in finally");
+}
+}
+}</pre>
+<p>If you were to execute the above code the sentence that will be printed in the error console would be the following one:</p>
+<pre>Exception in thread "main" java.lang.RuntimeException: Exception in finally
+  at com.sematext.blog.java.ThrowInFinally.example(ThrowInFinally.java:13)
+  at com.sematext.blog.java.ThrowInFinally.main(ThrowInFinally.java:6)</pre>
+<p>Yes, it is true. The RuntimeException that was thrown in the try block will be hidden and the one that was thrown in the finally block will take its place. It may not seem big, but have a look at the code like this:</p>
+<pre>public void example() throws Exception {
+  FileReader reader = null;
+  try {
+    reader = new FileReader("/tmp/somefile");
+  } finally {
+    reader.close();
+  }
+}</pre>
+<p>Now think about the execution of the code and what happens in a case where the file specified by the filePath is not available. First, the FileReader constructor would throw a FileNotFoundException and the execution would jump to the finally block. Once it gets there it would try to call the close method on a reference that is null. That means that the NullPointerException would be thrown here and the whole example method would throw it. So practically, the FileNotFoundException would be hidden and thus the real problem would not be easily visible that well.</p>
+<h2>Troubleshooting Java Exceptions with Sematext</h2>
+<p>Handling Exceptions properly in your Java code is important. Equally important is being able to use them for troubleshooting your Java applications. With <a href="https://sematext.com/cloud/">Sematext Cloud</a> you can find the most frequent errors and exceptions in your Java application logs, create custom dashboards for your team, and set up <a href="https://sematext.com/alerts/">real-time alerts and anomaly detection</a> to notify you of issues that require your attention. Can you also correlate errors, exceptions, and other application logs with your application <a href="https://sematext.com/spm/">performance metrics</a>. You can use Sematext not only to <a href="https://sematext.com/integrations/">monitor your Java applications</a>, but also to <a href="https://sematext.com/integrations/">monitor Elasticsearch</a>, Tomcat, Solr, Kafka, Nginx, your <a href="https://sematext.com/server-monitoring/">servers</a>, <a href="https://sematext.com/process-monitoring/">processes</a>, <a href="https://sematext.com/database-monitoring/">databases</a>, even your <a href="https://sematext.com/inventory-monitoring/">packages</a>, and the rest of your <a href="https://sematext.com/spm/">infrastructure</a>. With <a href="https://sematext.com/blog/service-autodiscovery-automatic-monitoring/">service auto-discovery and monitoring</a> everything is just a click away 🙂</p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="dozyload"  data-src="https://sematext.com/wp-content/uploads/2020/08/java-exceptions-post-2.png" /></p>
+<h2>Performance Side Effects of Using Exceptions</h2>
+<p>We&#8217;ve mentioned that using exceptions in Java doesn&#8217;t come for free. Throwing an exception in Java requires the JVM to fill up the whole call trace, list each method that comes with it, and pass it further to the code that will finally catch and handle the exception. That&#8217;s why you shouldn&#8217;t use exceptions unless it is really necessary.</p>
+<p>Let&#8217;s look at a very simple test. We will run two classes &#8211; one will do the division by zero and catch the exception that is caused by that operation. The other code will check if the divisor is zero before throwing the exception. The mentioned code is encapsulated in a method.</p>
+<p>The code that uses an exception looks as follows:</p>
+<pre>public int divide(int dividend, int divisor) {
+  try {
+    return dividend / divisor;
+  } catch (Exception ex) {
+    // handle exception
+  }
+  return -1;
+}</pre>
+<p>The code that does a simple check using a conditional looks as follows:</p>
+<pre>public int divide(int dividend, int divisor) {
+  if (divisor != 0) {
+    return 10 / divisor;
+  }
+  return -1;
+}</pre>
+<p>One million executions of the first method take 15 milliseconds, while one million executions of the second method take 5 milliseconds. So you can clearly see that there is a large difference in the execution time when running the code with exceptions and when using a simple conditional to check if the execution should be allowed. Of course, keep in mind that this comparison is very, very simple, and doesn&#8217;t reflect real-world scenarios, but it should give you an idea of what to expect when crafting your own code.</p>
+<p>The test execution time will differ depending on the machine, but you can run it on your own if you would like by cloning <a href="https://github.com/sematext/blog-java_logging/tree/master/performance">this Github repository</a>.</p>
+<h2>The Bottom Line</h2>
+<p>Even though exceptions in Java are not free and have a performance penalty they are invaluable for handling errors in your applications. They help in decoupling the main business code from the error handling code making the whole code cleaner and easier to understand. Using Exceptions wisely will make your code look good, be extensible, maintainable, and fun to work with. Use them without falling into the anti-patterns and log everything they tell you into your <a href="https://sematext.com/logsene/">centralized logging solution</a> so that you can get the most value out of any thrown and exceptions.</p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-50644" class="share-twitter sd-button share-icon" href="https://sematext.com/blog/java-exceptions/?share=twitter" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-facebook"><a rel="nofollow noopener noreferrer" data-shared="sharing-facebook-50644" class="share-facebook sd-button share-icon" href="https://sematext.com/blog/java-exceptions/?share=facebook" target="_blank" title="Click to share on Facebook"><span>Facebook</span></a></li><li class="share-linkedin"><a rel="nofollow noopener noreferrer" data-shared="sharing-linkedin-50644" class="share-linkedin sd-button share-icon" href="https://sematext.com/blog/java-exceptions/?share=linkedin" target="_blank" title="Click to share on LinkedIn"><span>LinkedIn</span></a></li><li class="share-reddit"><a rel="nofollow noopener noreferrer" data-shared="" class="share-reddit sd-button share-icon" href="https://sematext.com/blog/java-exceptions/?share=reddit" target="_blank" title="Click to share on Reddit"><span>Reddit</span></a></li><li class="share-email"><a rel="nofollow noopener noreferrer" data-shared="" class="share-email sd-button share-icon" href="https://sematext.com/blog/java-exceptions/?share=email" target="_blank" title="Click to email this to a friend"><span>Email</span></a></li><li class="share-end"></li></ul></div></div></div>
+<div id='jp-relatedposts' class='jp-relatedposts' >
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>                    <div id="twitter-footer-button">
+                        <p class="text-center spacing-20"><a href="https://twitter.com/sematext" id="continue-conversation-twitter" class="g-btn-primary">Continue the conversation</a></p>
+                    </div>
+                </div>
+
+                            </section>
+
+        </main>
+    </article>
+
+
+
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.6/build/highlight.min.js" charset="utf-8"></script>
+<script>
+
+function _slugify( str ) {
+    return str.toString().toLowerCase()
+        .replace(/\s+/g, '-')
+        .replace(/[^\w\-]+/g, '')
+        .replace(/\-\-+/g, '-');
+}
+
+function _tocJump(where) {
+
+    var _where = where.split('#')[1];
+    var _target_y = jQuery('#' + _where).offset().top;
+    jQuery('html,body').animate({ scrollTop: _target_y - 130 }, 350);
+    window.location.hash = '#' + _where;
+}
+
+function _toc() {
+
+    var _article = document.querySelector("article#post-50644 > main > section");
+    var _toc = '<ul class="toc">';
+    var _hs = [].slice.call( _article.querySelectorAll('h2, h3:not([class])') );
+        _hs.forEach(function(el, i) {
+
+            var _class = 'header-' + el.tagName.toLowerCase();
+            var _txt = el.innerText;
+            var _id = 'toc-' + _slugify(_txt) + '-' + i;
+                el.id = _id; // Set anchor
+            if (!!_txt) { // Set menu item
+                _toc += '\n';
+                _toc += '<li class="' + _class + '"><a href="#' + _id + '" title="' + _txt + '" onclick="_tocJump(this.href); return false;">' + _txt + '</a></li>';
+            }
+        });
+
+    // Close TOC
+    _toc += '\n';
+    _toc += '</ul>';
+    _toc = (!_hs.length) ? '' : _toc;
+
+    // Inject TOC
+    var toc_nav = document.querySelector('nav#toc-nav');
+    var is_multipost = !!toc_nav.querySelector('#serial-posts-wrapper')
+    if ( is_multipost ) {
+
+        var _current = toc_nav.querySelector('.current-inactive');
+            _current.innerHTML += _toc
+
+        var _toc_items = toc_nav.querySelectorAll('li.serial-posts-list-item');
+            _toc_items = Array.from(_toc_items);
+            _toc_items.forEach(function(el, i) {
+                el.innerHTML = 'Part '+ (i+1) +': ' + el.innerHTML;
+            });
+
+        var _ultoc_open = true;
+        _current.addEventListener('click', function(e) {
+            if ( _ultoc_open == true ) {
+                this.querySelector('ul.toc').style.display = 'none';
+                _ultoc_open = false;
+            } else {
+                this.querySelector('ul.toc').style.display = 'block';
+                _ultoc_open = true;
+            }
+        });
+        _current.querySelector('ul').addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+
+    } else {
+
+        var _toc_title = '<h3 class="serial-posts-heading">Table of Contents</h3>';
+        toc_nav.innerHTML += (_toc.length > 0) ? _toc_title : '';
+        toc_nav.innerHTML += _toc;
+    }
+}
+
+function _tocOpenListener() {
+
+    [].forEach.call( document.querySelectorAll('#toc-nav-status, #toc-nav ul li a'), function(el, i) {
+        el.addEventListener('click', function() {
+            document.querySelector('#toc-nav').classList.toggle('open');
+        });
+    });
+}
+
+function _highlighter() {
+
+    var _pre = document.querySelectorAll('pre');
+        _pre = Array.from(_pre);
+        _pre.forEach(function(el) {
+
+            var _current = el.innerHTML;
+            var _code = document.createElement('code');
+                _code.innerHTML = _current;
+
+            el.innerHTML = '';
+            el.appendChild(_code);
+
+            hljs.highlightBlock(_code);
+        });
+}
+
+function _scrollBar() {
+
+    var _scrolled = Math.round((
+        (document.body.scrollTop || document.documentElement.scrollTop) /
+        ((document.documentElement.scrollHeight - document.documentElement.clientHeight) - document.querySelector('.footer-area').offsetHeight)) * 100);
+        _scrolled = Math.min(100, _scrolled)
+
+    document.querySelector('#scroll-status-percent').style.width = _scrolled + '%';
+}
+
+function _twitterButton() {
+
+    // Positioning
+    var _twitter_button_container = document.querySelector('#twitter-footer-button');
+    var _twitter_button_target = document.createElement('div');
+        _twitter_button_target.innerHTML = _twitter_button_container.innerHTML;
+    var _twitter_button_new = document.querySelector('#the-content').insertBefore(_twitter_button_target, document.querySelector('.sharedaddy'));
+        _twitter_button_container.innerHTML = '';
+
+    var _twitter_button = document.getElementById('continue-conversation-twitter');
+        _twitter_button.onclick = function(e) {
+            e.preventDefault();
+            var _master = document.querySelector('li.share-twitter a');
+                _master.click();
+        }
+}
+
+function _sharerPosition() {
+
+    document.querySelector('.aside-troubleshooting').innerHTML = document.querySelector('.sharedaddy').innerHTML;
+}
+
+function _checkActiveItem(sections) {
+
+    var _viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+    var _output = [];
+    for (var i = 0; i < sections.length; i++) {
+        var _s = document.querySelector('#the-content #' + sections[i]).getBoundingClientRect();
+        if (_s.y < _viewportHeight) {
+            _output.push({'i':i, 'h':_s.y});
+        }
+    }
+
+    var _el = false;
+    if ( _output.length == 1 ) { _el = _output[0].i; }
+    if ( _output.length >= 2 ) {
+        var _last = _output[_output.length-1];
+        var _penu = _output[_output.length-2];
+        _el = ( _last.h < 200 ) ? _last.i : _penu.i
+    }
+
+    // Set if applicable
+    if ( _el !== false && (_el || _el === 0) ) { _setActiveItem(_el); } else { _removeActiveItem() }
+}
+
+function _removeActiveItem() {
+    var els = document.querySelectorAll('nav#toc-nav ul.toc a');
+    [].forEach.call( els, function(el) {
+        el.classList.remove('active');
+    })
+
+}
+function _setActiveItem(active) {
+    var els = document.querySelectorAll('nav#toc-nav ul.toc a');
+    [].forEach.call( els, function(el, i) {
+        if ( i == active ) {
+            el.classList.add('active');
+        } else {
+            el.classList.remove('active');
+        }
+    })
+}
+
+function _getSections() {
+
+    return Array.from(document.querySelectorAll('nav#toc-nav ul.toc a')).map(function(el) {
+        return el.href.split('#')[1];
+    });
+}
+
+function _fiColor() {
+
+    function _rgbToHex(rgb) {
+        function cHex(c) {
+            let _hex = c.toString(16);
+            return _hex.length == 1 ? "0" + _hex : _hex;
+        }
+        return "#" + cHex(rgb.r) + cHex(rgb.g) + cHex(rgb.b);
+    }
+
+    let _canvas = document.createElement('canvas');
+    let _context = _canvas.getContext && _canvas.getContext('2d');
+    let _rgb = { r:0, g:0, b:0 };
+
+    let _fi = document.querySelector('#the-featured-image');
+    let _height = _canvas.height = _fi.naturalHeight || _fi.offsetHeight || _fi.height;
+    let _width = _canvas.width = _fi.naturalWidth || _fi.offsetWidth || _fi.width;
+
+    let _xhr = new XMLHttpRequest();
+
+        _xhr.open('GET', _fi.src);
+        // _xhr.open('GET', 'https://cors-anywhere.herokuapp.com/' . _fi.src);
+        _xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+        _xhr.responseType = "blob";
+        _xhr.onload = function() {
+
+            let _urlCreator = window.URL || window.webkitURL;
+            let _imgUrl = _urlCreator.createObjectURL( _xhr.response );
+
+            let _img = new Image();
+                _img.onload = function() {
+
+                    let _sampleSize = 20;
+                    _context.drawImage(_img, 0, 0, _width, _height);
+
+                    let _data = _context.getImageData(0, 0, _sampleSize, _sampleSize);
+                    let _length = _data.data.length;
+                    let _counter = 0;
+                    let _pixelJump = 1;
+                    let _i = -4;
+                    while ( (_i += _pixelJump * 4) < _length ) {
+                        ++_counter;
+                        _rgb.r += _data.data[_i];
+                        _rgb.g += _data.data[_i+1];
+                        _rgb.b += _data.data[_i+2];
+                    }
+
+                    _rgb.r = ~~(_rgb.r/_counter);
+                    _rgb.g = ~~(_rgb.g/_counter);
+                    _rgb.b = ~~(_rgb.b/_counter);
+
+                    document.querySelector('.blog-post-hero-bg').style.background = _rgbToHex(_rgb);
+                    document.querySelector('.blog-post-hero-bg-img').classList.add('fadeout');
+
+                }
+                _img.src = _imgUrl;
+                _img.onerror = function() { console.log("Error loading image"); };
+
+        };
+        _xhr.send();
+}
+
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+document.addEventListener("DOMContentLoaded", function() {
+
+    _toc();
+    _tocOpenListener();
+    _highlighter();
+    _twitterButton();
+    _sharerPosition();
+
+    window.addEventListener('scroll', function() {
+
+        _scrollBar();
+        _checkActiveItem(_getSections());
+    });
+});
+
+window.addEventListener("load", function() {
+
+    _fiColor();
+})
+
+</script>
+		</div><!-- close .row -->
+	</div><!-- close .container -->
+</div><!-- close .site-content -->
+
+	<div class="footer-area">
+
+		<div class="container footer-inner">
+			<div class="col-md-3 col-sm-6">
+				<h4>Products</h4>
+				<ul>
+					<li><a href="/cloud/" title="Sematext Cloud">Sematext Cloud</a></li>
+					<li><a href="/spm/" title="Infrastructure Monitoring">Infrastructure Monitoring</a></li>
+					<li><a href="/logsene/" title="Log Management">Log Management</a></li>
+					<li><a href="/experience/" title="Real User Monitoring">Real User Monitoring</a></li>
+					<li><a href="/synthetic-monitoring/" title="Synthetic Monitoring">Synthetic Monitoring</a></li>
+					<li><a href="/tracing/" title="Distributed Transaction Tracing">APM / Tracing</a></li>
+					<li><a href="/enterprise/" title="Sematext Enterprise">Sematext Enterprise</a></li>
+				</ul>
+			</div>
+			<div class="col-md-2 col-sm-6">
+				<h4>Services</h4>
+				<ul>
+					<li><a href="/consulting/" title="Consulting">Consulting</a></li>
+					<li><a href="/support/" title="Support">Support</a></li>
+					<li><a href="/training/" title="Training">Training</a></li>
+				</ul>
+			</div>
+			<div class="col-md-2 col-sm-6">
+				<h4>About</h4>
+				<ul>
+					<li><a href="/about/" title="Company">Company</a></li>
+					<li><a href="/blog/" title="Blog">Blog</a></li>
+					<li><a href="/jobs/" title="Jobs">Jobs</a></li>
+					<li><a href="/customers/" title="Customers">Customers</a></li>
+					<li><a href="https://status.sematext.com/" title="Status">Status</a></li>
+				</ul>
+			</div>
+			<div class="col-md-2 col-sm-6">
+				<h4>Contact</h4>
+				<ul>
+					<li><i class="fa fa-phone fa-fw"></i> <a href="tel:+1 347-480-1610">+1 347-480-1610</a></li>
+					<li><i class="fa fa-envelope fa-fw"></i> <a href="mailto:info@sematext.com">info@sematext.com</a></li>
+					<li><i class="fa fa-map-marker fa-fw"></i> <a href="https://www.google.com/maps/place/540+President+St,+Brooklyn,+NY+11215,+EE.+UU./@40.6773068,-73.9875385,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25a55722bfff7:0x2143eab42dc5c96d!8m2!3d40.67713!4d-73.984982" target="_blank">Brooklyn, NY USA</a></li>
+					<li class="social-networks">
+						<a href="https://twitter.com/sematext"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="https://www.facebook.com/Sematext/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href="https://github.com/sematext"><i class="fa fa-github" aria-hidden="true"></i></a>
+						<a href="https://www.linkedin.com/company/294493/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-3 col-sm-12">
+				<p>
+					<strong>&copy; Sematext Group. All rights reserved</strong>
+					<br /><a href="/legal/terms-of-service/">Terms Of Service</a> · <a href="/legal/privacy/">Privacy Policy</a>
+				</p>
+			</div>
+		</div>
+
+		<footer id="colophon" class="site-footer" role="contentinfo">
+
+			<div class="container">
+
+				<div class="copyright col-md-12">
+					<p>
+						Apache Lucene, Apache Solr and their respective logos are trademarks of the Apache Software Foundation.
+						Elasticsearch, Kibana, Logstash, and Beats are trademarks of Elasticsearch BV, registered in the U.S.
+						and in other countries. Sematext Group, Inc. is not affiliated with Elasticsearch BV.
+					</p>
+
+									</div>
+
+				
+			</div>
+			<!-- .site-info -->
+
+			
+		</footer>
+		<!-- #colophon -->
+	</div>
+
+</div>
+<!-- #page -->
+
+<template id="resources-most-popular">
+	<div id="resources-most-popular-box">
+		<div class="rsc-mostpopular-head">
+			<h3>Most Popular</h3>
+			<div class="rsc-mostpopular-nav">
+				<a href="#" id="prev">&lsaquo;</a>
+				<a href="#" id="next">&rsaquo;</a>
+			</div>
+		</div>
+		<figure>
+			<img data-baseurl="https://sematext.com/wp-content/themes/sematext-next" alt="img" />
+		</figure>
+		<div class="rsc-mostpopular-footer">
+			<h4></h4>
+			<p><a href="#" id="rsc-download-link">Download Yours</a></p>
+		</div>
+	</div>
+</template>
+
+
+  <script type="text/javascript">
+    jQuery( document ).ready( function( $ ){
+      if ( $( window ).width() >= 767 ){
+        $( '.navbar-nav > li.menu-item > a' ).click( function(){
+          window.location = $( this ).attr( 'href' );
+        });
+      }
+    });
+  </script>
+<script>jQuery(document).ready(function ($) { $('p').selectionSharer();});</script>        <script type="text/javascript">
+            (function(){
+                document.addEventListener('DOMContentLoaded', function(){
+                    let wpp_widgets = document.querySelectorAll('.popular-posts-sr');
+
+                    if ( wpp_widgets ) {
+                        for (let i = 0; i < wpp_widgets.length; i++) {
+                            let wpp_widget = wpp_widgets[i];
+                            WordPressPopularPosts.theme(wpp_widget);
+                        }
+                    }
+                });
+            })();
+        </script>
+                <script>
+            var WPPImageObserver = null;
+
+            function wpp_load_img(img) {
+                if ( ! 'imgSrc' in img.dataset || ! img.dataset.imgSrc )
+                    return;
+
+                img.src = img.dataset.imgSrc;
+
+                if ( 'imgSrcset' in img.dataset ) {
+                    img.srcset = img.dataset.imgSrcset;
+                    img.removeAttribute('data-img-srcset');
+                }
+
+                img.classList.remove('wpp-lazyload');
+                img.removeAttribute('data-img-src');
+                img.classList.add('wpp-lazyloaded');
+            }
+
+            function wpp_observe_imgs(){
+                let wpp_images = document.querySelectorAll('img.wpp-lazyload'),
+                    wpp_widgets = document.querySelectorAll('.popular-posts-sr');
+
+                if ( wpp_images.length || wpp_widgets.length ) {
+                    if ( 'IntersectionObserver' in window ) {
+                        WPPImageObserver = new IntersectionObserver(function(entries, observer) {
+                            entries.forEach(function(entry) {
+                                if (entry.isIntersecting) {
+                                    let img = entry.target;
+                                    wpp_load_img(img);
+                                    WPPImageObserver.unobserve(img);
+                                }
+                            });
+                        });
+
+                        if ( wpp_images.length ) {
+                            wpp_images.forEach(function(image) {
+                                WPPImageObserver.observe(image);
+                            });
+                        }
+
+                        if ( wpp_widgets.length ) {
+                            for (var i = 0; i < wpp_widgets.length; i++) {
+                                let wpp_widget_images = wpp_widgets[i].querySelectorAll('img.wpp-lazyload');
+
+                                if ( ! wpp_widget_images.length && wpp_widgets[i].shadowRoot ) {
+                                    wpp_widget_images = wpp_widgets[i].shadowRoot.querySelectorAll('img.wpp-lazyload');
+                                }
+
+                                if ( wpp_widget_images.length ) {
+                                    wpp_widget_images.forEach(function(image) {
+                                        WPPImageObserver.observe(image);
+                                    });
+                                }
+                            }
+                        }
+                    } /** Fallback for older browsers */
+                    else {
+                        if ( wpp_images.length ) {
+                            for (var i = 0; i < wpp_images.length; i++) {
+                                wpp_load_img(wpp_images[i]);
+                                wpp_images[i].classList.remove('wpp-lazyloaded');
+                            }
+                        }
+
+                        if ( wpp_widgets.length ) {
+                            for (var j = 0; j < wpp_widgets.length; j++) {
+                                let wpp_widget = wpp_widgets[j],
+                                    wpp_widget_images = wpp_widget.querySelectorAll('img.wpp-lazyload');
+
+                                if ( ! wpp_widget_images.length && wpp_widget.shadowRoot ) {
+                                    wpp_widget_images = wpp_widget.shadowRoot.querySelectorAll('img.wpp-lazyload');
+                                }
+
+                                if ( wpp_widget_images.length ) {
+                                    for (var k = 0; k < wpp_widget_images.length; k++) {
+                                        wpp_load_img(wpp_widget_images[k]);
+                                        wpp_widget_images[k].classList.remove('wpp-lazyloaded');
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+                wpp_observe_imgs();
+
+                // When an ajaxified WPP widget loads,
+                // Lazy load its images
+                document.addEventListener('wpp-onload', function(){
+                    wpp_observe_imgs();
+                });
+            });
+        </script>
+        
+<style type="text/css">
+    #wpfront-notification-bar 
+    {
+        background: #6e39ff;
+        background: -moz-linear-gradient(top, #6e39ff 0%, #6e39ff 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6e39ff), color-stop(100%,#6e39ff));
+        background: -webkit-linear-gradient(top, #6e39ff 0%,#6e39ff 100%);
+        background: -o-linear-gradient(top, #6e39ff 0%,#6e39ff 100%);
+        background: -ms-linear-gradient(top, #6e39ff 0%,#6e39ff 100%);
+        background: linear-gradient(to bottom, #6e39ff 0%, #6e39ff 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6e39ff', endColorstr='#6e39ff',GradientType=0 );
+    }
+
+    #wpfront-notification-bar div.wpfront-message
+    {
+        color: #ffffff;
+    }
+
+    #wpfront-notification-bar a.wpfront-button
+    {
+        background: #4524a0;
+        background: -moz-linear-gradient(top, #4524a0 0%, #4524a0 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4524a0), color-stop(100%,#4524a0));
+        background: -webkit-linear-gradient(top, #4524a0 0%,#4524a0 100%);
+        background: -o-linear-gradient(top, #4524a0 0%,#4524a0 100%);
+        background: -ms-linear-gradient(top, #4524a0 0%,#4524a0 100%);
+        background: linear-gradient(to bottom, #4524a0 0%, #4524a0 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4524a0', endColorstr='#4524a0',GradientType=0 );
+
+        color: #ffffff;
+    }
+
+    #wpfront-notification-bar-open-button
+    {
+        background-color: #4524a0;
+    }
+
+    #wpfront-notification-bar  div.wpfront-close 
+    {
+        border: 1px solid #4524a0;
+        background-color: #4524a0;
+        color: #272727;
+    }
+
+    #wpfront-notification-bar  div.wpfront-close:hover 
+    {
+        border: 1px solid #272727;
+        background-color: #272727;
+    }
+</style>
+
+
+<div id="wpfront-notification-bar-spacer"  style="display: none;">
+    <div id="wpfront-notification-bar-open-button" class="top wpfront-bottom-shadow"></div>
+    <div id="wpfront-notification-bar" class="wpfront-fixed ">
+                <table border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td>
+                    <div class="wpfront-message">
+                        New! Improved SSL Certificate Monitoring &amp; Alerting in Synthetics. <a href="https://sematext.com/product-updates/#/2020/improved-ssl-certificate-monitoring-with-alerting">Learn more</a>                    </div>
+                    <div>
+                                            </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+<style type="text/css">
+.navbar-fixed-top { top: 40px; }
+.breadcrumb, .breadcrumb1 { top: 89px; }
+#wpfront-notification-bar table,
+#wpfront-notification-bar tbody,
+#wpfront-notification-bar tr,
+#wpfront-notification-bar td {
+    display: block;
+    width: 100%;
+    padding: 0;
+    vertical-align: middle;
+}
+#wpfront-notification-bar td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+.wpfront-message {
+    font-size: 15px;
+    font-weight: 400;
+}
+.wpfront-message a {
+    display: inline-block;
+    background: #4524a0;
+    color: #fff;
+    border-radius: 3px;
+    border: none;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 6px 8px;
+    margin: 0 0 0 8px;
+}
+.wpfront-message a:hover { background: #272727; }
+
+@media only screen and (max-width: 600px)  {
+    #wpfront-notification-bar { 
+        max-width: 100%;
+        overflow: hidden;
+        height: auto;
+        min-height: 40px;        
+    }
+    #wpfront-notification-bar td {
+        height: auto;
+        min-height: 40px;
+    justify-content: flex-start;
+    padding: 5px 105px 5px 10px;
+    }
+    .wpfront-message {
+        font-size: 11px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    }
+    .wpfront-message a {
+        font-size: 11px;
+        padding: 3px 5px;
+        margin: 0 0 0 4px;
+    position: absolute;
+    right: 10px;
+    top: 9px;
+    }
+}
+body.logged-in .navbar-fixed-top { top: 72px; }
+body.logged-in .breadcrumb1 { top: 120px; }
+.affix { top: 40px; }
+body.logged-in .card {
+    margin-top: 190px;
+    margin-bottom: 30px;
+}
+.card {
+    margin-top: 160px;
+    margin-bottom: 30px;
+}</style>
+<script type="text/javascript">if(typeof wpfront_notification_bar == "function") wpfront_notification_bar({"position":1,"height":40,"fixed_position":"on","animate_delay":0,"close_button":false,"button_action_close_bar":false,"auto_close_after":0,"display_after":0,"is_admin_bar_showing":false,"display_open_button":false,"keep_closed":false,"keep_closed_for":0,"position_offset":0,"display_scroll":false,"display_scroll_offset":0});</script>
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https:\/\/sematext.com\/blog\/java-exceptions\/":50644};
+	</script>
+					<div id="sharing_email" style="display: none;">
+		<form action="/blog/java-exceptions/" method="post">
+			<label for="target_email">Send to Email Address</label>
+			<input type="email" name="target_email" id="target_email" value="" />
+
+			
+				<label for="source_name">Your Name</label>
+				<input type="text" name="source_name" id="source_name" value="" />
+
+				<label for="source_email">Your Email Address</label>
+				<input type="email" name="source_email" id="source_email" value="" />
+
+						<input type="text" id="jetpack-source_f_name" name="source_f_name" class="input" value="" size="25" autocomplete="off" title="This field is for validation and should not be changed" />
+			
+			<img style="float: right; display: none" class="loading" src="https://sematext.com/wp-content/plugins/jetpack/modules/sharedaddy/images/loading.gif" alt="loading" width="16" height="16" />
+			<input type="submit" value="Send Email" class="sharing_send" />
+			<a rel="nofollow" href="#cancel" class="sharing_cancel" role="button">Cancel</a>
+
+			<div class="errors errors-1" style="display: none;">
+				Post was not sent - check your email addresses!			</div>
+
+			<div class="errors errors-2" style="display: none;">
+				Email check failed, please try again			</div>
+
+			<div class="errors errors-3" style="display: none;">
+				Sorry, your blog cannot share posts by email.			</div>
+		</form>
+	</div>
+<script type='text/javascript' src='https://sematext.com/wp-content/themes/sematext-next/inc/js/custom_script.js?ver=1.1'></script>
+<script type='text/javascript' src='https://sematext.com/wp-includes/js/comment-reply.min.js?ver=5.4.2'></script>
+<script type='text/javascript' src='https://sematext.com/wp-includes/js/wp-embed.min.js?ver=5.4.2'></script>
+<script type='text/javascript' src='https://sematext.com/wp-content/plugins/selection-sharer/js/selection-sharer.js?ver=0.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1","is_stats_active":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://sematext.com/wp-content/plugins/jetpack/_inc/build/sharedaddy/sharing.min.js?ver=8.5'></script>
+<script type='text/javascript'>
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-twitter', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-facebook', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-linkedin', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomlinkedin', 'menubar=1,resizable=1,width=580,height=450' );
+				return false;
+			});
+</script>
+<script type='text/javascript' src='https://stats.wp.com/e-202036.js' async='async' defer='defer'></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:8.5',blog:'107910772',post:'50644',tz:'-4',srv:'sematext.com'} ]);
+	_stq.push([ 'clickTrackerInit', '107910772', '50644' ]);
+</script>
+
+
+	<!-- LinkedIn Insight Tag -->
+	<script type="text/javascript">
+	    _linkedin_partner_id = "2338377";
+	    window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+	    window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+
+	    (function(){var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript";b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);})();
+	</script>
+	<noscript><img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=2338377&fmt=gif" /></noscript>
+	<!-- End of LinkedIn Insight Tag -->
+
+	<script async defer src="https://sematext.com/wp-content/themes/sematext-theme/inc/js/smtuc.js"></script>
+
+</body>
+</html>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+Object Caching 263/269 objects using disk
+Page Caching using disk: enhanced 
+Minified using disk
+Database Caching 2/6 queries in 0.002 seconds using disk
+
+Served from: sematext.com @ 2020-09-06 03:04:23 by W3 Total Cache
+-->
